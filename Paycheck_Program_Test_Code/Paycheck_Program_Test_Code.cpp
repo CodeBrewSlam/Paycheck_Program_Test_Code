@@ -14,7 +14,7 @@ int main()
 		{
 			cout << "\nEnter a positive number.\n";
 		}
-	} while (grossPay < 0);
+	} while (grossPay < 0); // This will ensure loop if input is negative
 	
 	string payPeriod;
 
@@ -23,12 +23,12 @@ int main()
 		cout << "\nEnter pay period abbreviation: ";
 		cin >> payPeriod;
 
-		if (payPeriod != "BW" && payPeriod != "SM" && payPeriod != "MN")
+		if (payPeriod != "BW" && payPeriod != "SM" && payPeriod != "MN") // We can expand on this to handle lowercase input also
 		{
 			cout << "\nPlease enter a valid abbreviation.\n\n";
 		}
 
-	} while (payPeriod != "BW" && payPeriod != "SM" && payPeriod != "MN");
+	} while (payPeriod != "BW" && payPeriod != "SM" && payPeriod != "MN"); // Loop if not valid input
 
 
 	return 0;
